@@ -1,7 +1,7 @@
 declare const process: any;
 
 function getBackendUrlHost() {
-  const defaultUrl = 'http://localhost:2200';
+  const defaultUrl = 'http://10.214.2.33:2200';
   const envUrl = process?.env?.BACKEND_URL || '';
   const localStorageUrl = localStorage.getItem('backendUrl') || '';
   const urlParam = new URLSearchParams(window.location.search).get('api') || '';
