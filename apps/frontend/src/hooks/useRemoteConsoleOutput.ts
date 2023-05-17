@@ -7,8 +7,8 @@ const ansiToHtml = new AnsiToHtml();
 
 const SEGMENT_BREAKERS = [
   //
-  'Welcome to Auto-GPT!',
-  'NEXT ACTION: ',
+  'Auto-GPT에 오신 것을 환영합니다!',
+  '다음 작업: ',
   '\n\n',
 ];
 
