@@ -65,34 +65,34 @@ export const EditAIProfileModal: React.FC<EditAIProfileModalProps> = ({
       <ModalOverlay />
       <ModalContent>
         <ModalHeader>
-          {isCreatingNewProfile ? 'New' : 'Edit'} AI Profile
+          {isCreatingNewProfile ? '새로운 AI 프로필' : 'AI 프로필 편집'} 
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <VStack align='stretch' spacing={4}>
             <FormControl>
-              <FormLabel>Name your AI</FormLabel>
+              <FormLabel>AI에 이름 짓기</FormLabel>
               <Input
                 value={profile.name}
                 onChange={(e) =>
                   setProfile({ ...profile, name: e.target.value })
                 }
-                placeholder='Entrepreneur-GPT'
+                placeholder='기업가-GPT'
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Describe your AI's Role</FormLabel>
+              <FormLabel>AI의 역할 설명</FormLabel>
               <Textarea
                 value={profile.role}
                 onChange={(e) =>
                   setProfile({ ...profile, role: e.target.value })
                 }
-                placeholder='An AI designed to autonomously develop and run businesses with the sole goal
-  of increasing your net worth.'
+                placeholder='순자산 증가라는 유일한 목표를 가지고 자율적으로 비즈니스를 개발하고 운영하도록
+                자율적으로 비즈니스를 개발 및 운영하도록 설계된 인공지능입니다.'
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Goals for your AI</FormLabel>
+              <FormLabel>AI를 위한 목표</FormLabel>
               <VStack align='stretch' spacing={2}>
                 {profile.goals.map((goal, index) => (
                   <Textarea
