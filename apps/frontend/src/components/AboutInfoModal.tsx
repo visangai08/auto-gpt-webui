@@ -29,7 +29,7 @@ export function AboutInfoModal() {
         onClick={onOpen}
       />
 
-      <Modal isOpen={isOpen} onClose={onClose}>
+      {/* <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>About this project</ModalHeader>
@@ -83,7 +83,7 @@ export function AboutInfoModal() {
             <Spacer h='30px' />
           </ModalBody>
         </ModalContent>
-      </Modal>
+      </Modal> */}
     </>
   );
 }

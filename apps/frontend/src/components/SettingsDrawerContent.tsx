@@ -85,28 +85,28 @@ function SettingToggles() {
 
   return (
     <>
-      <Heading size='md'>Appearance</Heading>
+      <Heading size='md'>모드</Heading>
 
       <SettingControl_Toggle
-        label={`${isDarkMode ? '🌜' : '🌞'} Dark mode`}
+        label={`${isDarkMode ? '🌜' : '🌞'} 다크 모드`}
         value={isDarkMode}
         setValue={toggleColorMode}
       />
 
-      <Heading size='md'>Backend script settings</Heading>
+      <Heading size='md'>스크립트 설정</Heading>
 
       <SettingControl_Toggle
-        label='😢 Use only GPT-3.5 (no GPT-4)'
+        label='😢 GPT-3.5만 사용(GPT-4는 사용하지 않음)'
         value={autoWithOnlyGPT3}
         setValue={setAutoWithOnlyGPT3}
       />
       <SettingControl_Toggle
-        label='💀 Use continuous mode'
+        label='💀 연속 모드 사용'
         value={autoContinuous}
         setValue={setAutoContinuous}
       />
       <SettingControl_Toggle
-        label='🐛 Use debug mode'
+        label='🐛 디버그 모드 사용'
         value={autoDebugMode}
         setValue={setAutoDebugMode}
       />
@@ -142,11 +142,11 @@ function EnvVars() {
             <>is set up.</>
           </Box>
         );
-      if (isRequired) return <>is missing!</>;
+      if (isRequired) return <>가 누락되었습니다!</>;
       return (
         <>
           <Box as='span' fontWeight='normal' textStyle='italic'>
-            isn't set up (optional)
+          가 설정되지 않음(선택 사항)
           </Box>
         </>
       );
@@ -183,7 +183,7 @@ function EnvVars() {
 
   return (
     <>
-      <Heading size='md'>Environment Variables</Heading>
+      <Heading size='md'>환경 변수</Heading>
 
       {Object.entries(BackendConfigurationKeys)
         .sort(([keyA], [keyB]) => {

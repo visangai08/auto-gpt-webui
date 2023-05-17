@@ -149,7 +149,7 @@ function AddAIProfileCard({ onClick }: { onClick: () => void }) {
       <Center h='full' flexDirection='column'>
         <Text>&nbsp;</Text>
         <AddIcon mb='4' boxSize={5} />
-        <Text>Add AI Profile</Text>
+        <Text>AI 프로필 추가</Text>
       </Center>
     </MenuCard>
   );

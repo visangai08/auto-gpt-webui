@@ -70,7 +70,7 @@ export function TheAreaAtTheBottom() {
                 </Button>
               </>
             ) : (
-              <Text>☝ Select an AI Profile to fire up Auto-GPT with. ☝</Text>
+              <Text>☝ Auto-GPT를 실행할 AI 프로필을 선택합니다. ☝</Text>
             )}
           </ButtonGroup>
         </Flex>

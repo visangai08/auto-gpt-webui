@@ -11,7 +11,7 @@ export function StartNewProcessMenu() {
         p={0}
       >
         <Heading as='h3' size='lg' mt='16' mb='8'>
-          Select a profile to start a new process.
+        새 프로세스를 시작하려면 프로필을 선택합니다.
         </Heading>
         <ListOfAIProfiles showAddButton />
       </Container>
