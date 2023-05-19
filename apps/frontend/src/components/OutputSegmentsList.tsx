@@ -125,7 +125,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           leftIcon={<CheckIcon />}
           onClick={() => sendInput('y')}
         >
-          Yes
+          네
         </Button>
         <Button
           //
@@ -134,7 +134,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           colorScheme={props.redNo ? 'red' : 'blue'}
           onClick={() => sendInput('n')}
         >
-          No
+          아니오
         </Button>
         <Button
           size='sm'
@@ -142,7 +142,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           colorScheme='blue'
           onClick={() => sendInput('')}
         >
-          ⏎ Enter
+          ⏎ 엔터
         </Button>
         {/* <Spacer /> */}
         <Button
@@ -151,7 +151,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           colorScheme='pink'
           onClick={() => promptAndSendInput()}
         >
-          Enter custom text to send
+          보낼 사용자 지정 텍스트 입력
         </Button>
       </Wrap>
     );
@@ -173,7 +173,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           variant='link'
           mb='2'
         >
-          [Hide input options]
+          [입력 옵션 숨기기]
         </Button>
         <YesNoAndInputBar />
       </>
@@ -182,7 +182,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
 
   return (
     <Button size='sm' onClick={() => setForceShowInputBar(true)} variant='link'>
-      [Show input options]
+      [입력 옵션 표시]
     </Button>
   );
 }

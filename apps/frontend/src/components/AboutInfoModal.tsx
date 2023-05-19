@@ -32,7 +32,7 @@ export function AboutInfoModal() {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>About this project</ModalHeader>
+          <ModalHeader>이 프로젝트에 대해</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text mb='3'>

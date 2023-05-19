@@ -57,16 +57,16 @@ export function TheAreaAtTheBottom() {
             {backendState?.activeProcessRunning ? (
               <>
                 <Button colorScheme='teal' onClick={sendInput} rounded='full'>
-                  Send Input
+                입력 전송
                 </Button>
                 <Button colorScheme='red' onClick={killProcess} rounded='full'>
-                  Terminate
+                종료하기
                 </Button>
               </>
             ) : outputSegments?.length > 0 ? (
               <>
                 <Button onClick={clearOutput} rounded='full'>
-                  Clear output
+                출력 지우기
                 </Button>
               </>
             ) : (
