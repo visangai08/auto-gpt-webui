@@ -57,11 +57,11 @@ function BadConfigurationAlerts() {
             >
               <AlertIcon />
               <AlertTitle>
-                You haven't yet set the <code>{key}</code> environment variable.
+              아직 <code>{key}</code> 환경 변수를 설정하지 않았습니다.
               </AlertTitle>
               <Spacer />
               <AlertDescription fontSize='sm' fontWeight='normal'>
-                Click me to add one.
+              추가하려면 저를 클릭하세요.
               </AlertDescription>
             </Alert>
           );

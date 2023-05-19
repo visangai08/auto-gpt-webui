@@ -14,7 +14,7 @@ export function useAutoGPTStarter() {
   ]
     .filter(Boolean)
     .join(' ');
-  const command = `python scripts/main.py ` + autoGptAdditionalCommandArgs;
+  const command = `python -m autogpt ` + autoGptAdditionalCommandArgs;
 
   function sendStartCommandWithProfile(aiProfile: AIProfile) {
     if (!aiProfile) {

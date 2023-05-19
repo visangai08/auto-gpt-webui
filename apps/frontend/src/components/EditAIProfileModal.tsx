@@ -65,13 +65,13 @@ export const EditAIProfileModal: React.FC<EditAIProfileModalProps> = ({
       <ModalOverlay />
       <ModalContent>
         <ModalHeader>
-          {isCreatingNewProfile ? 'New' : 'Edit'} AI Profile
+          {isCreatingNewProfile ? '새로운 AI 프로필' : 'AI 프로필 편집'} 
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <VStack align='stretch' spacing={4}>
             <FormControl>
-              <FormLabel>Name your AI</FormLabel>
+              <FormLabel>AI에 이름 짓기</FormLabel>
               <Input
                 value={profile.name}
                 onChange={(e) =>
@@ -81,7 +81,7 @@ export const EditAIProfileModal: React.FC<EditAIProfileModalProps> = ({
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Describe your AI's Role</FormLabel>
+              <FormLabel>AI의 역할 설명</FormLabel>
               <Textarea
                 value={profile.role}
                 onChange={(e) =>
@@ -92,7 +92,7 @@ export const EditAIProfileModal: React.FC<EditAIProfileModalProps> = ({
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Goals for your AI</FormLabel>
+              <FormLabel>AI의 목표</FormLabel>
               <VStack align='stretch' spacing={2}>
                 {profile.goals.map((goal, index) => (
                   <Textarea
