@@ -102,7 +102,7 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
   const { expectedUserInteraction } = segment;
   const apiService = useApiService();
 
-  const [forceShowInputBar, setForceShowInputBar] = useState(false);
+  const [forceShowInputBar, setForceShowInputBar] = useState(true);
 
   function sendInput(input: string) {
     apiService.sendInput(input);
@@ -140,9 +140,9 @@ function SegmentBoxInputBar({ segment }: { segment: OutputSegment }) {
           size='sm'
           px={6}
           colorScheme='blue'
-          onClick={() => sendInput('')}
+          onClick={() => sendInput('s')}
         >
-          ⏎ 엔터
+          자기피드백
         </Button>
         {/* <Spacer /> */}
         <Button
